@@ -12,3 +12,12 @@ bean3 = Bean.create( { name: "GREEN", roast: "unwashed", flavour: "vanilla", pri
 
 country1 = Country.create( { name: "Colombia", image_url: "http://www.puurkoffie.nl/wp-content/uploads/2015/06/Finca-Verdum-Cup-of-Excellence.jpg" } )
 country2 = Country.create( { name: "Ethiopia", image_url: "http://www.genovese.com.au/wp-content/uploads/2015/01/Ethiopia-Landscape-1024x680.jpg" } )
+
+country1.beans << [bean1]
+country1.save
+
+country2.beans << [bean2]
+country2.save
+
+country2.beans << [bean3]
+country2.save
