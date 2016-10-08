@@ -1,0 +1,36 @@
+h2 {
+  color: #333333;
+  font-family: 'Noto Sans', sans-serif;
+  margin-left: 50px;
+}
+
+
+.name_label {
+  font-family: 'Noto Sans', sans-serif;
+  color: #333333;
+  background-color: white;
+  height: 400px;
+  margin-top: 200px;
+  margin-left: 50px;
+  }
+
+.text_field {
+  background-color: white;
+  height: 20px;
+  width: 300px;
+  border: none;
+  border-bottom: 0.5px solid #3EBBB2;
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.country_button {
+  font-family: 'Noto Sans', sans-serif;
+  margin-left: 450px;
+}
+
+.create_button {
+  margin-left: 50px;
+  margin-top: 50px;
+}
