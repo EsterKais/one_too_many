@@ -21,9 +21,23 @@
 .header {
   color: #333333
 
+font-family: 'Lalezar', cursive;
+font-family: 'Changa', sans-serif;
+font-family: 'Monoton', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Bungee Outline', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Rationale', sans-serif;
+font-family: 'Megrim', cursive;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Monofett', cursive;
+font-family: 'Fascinate', cursive;
+font-family: 'Geostar Fill', cursive;
+font-family: 'Plaster', cursive;
 
-  font-family: 'Monoton', cursive;
-
+text-align: center;
 }
 
 .footer {
