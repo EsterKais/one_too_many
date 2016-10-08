@@ -1,12 +1,23 @@
-<h1><%= @bean.name %></h1>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
 
-  <p><%= @bean.roast.capitalize %></p>
-  <p><%= @bean.flavour.capitalize %></p>
-  <p><%= @bean.country.name %></p>
-  <p>€<%= @bean.price %></p>
+<h2><%= @bean.name %></h2>
 
-  <p><%= image_tag @bean.image_url%></p>
+  <div class="descr">Roast</div>
+  <div class="thing"><%= @bean.roast.capitalize %></div>
+
+  <div class="descr">Flavour</div>
+  <div class="thing"><%= @bean.flavour.capitalize %></div>
+
+  <div class="descr">Country</div>
+  <div class="thing"><%= @bean.country.name %></div>
+
+  <div class="descr">Price</div>
+  <div class="thing">€ <%= @bean.price %></div>
+
+  <div><%= image_tag @bean.image_url%></div>
 
 
-  <%= link_to "EDIT", edit_bean_path(@bean.id) %>
-  <%= link_to "DELETE", bean_path(@bean.id), method: :delete, data: {confirm: "Are you sure?"} %>
+  <div class="buttons"><%= link_to "EDIT", edit_bean_path(@bean.id), class: "edit_button"%>
+  <%= link_to "DELETE", bean_path(@bean.id), method: :delete, data: {confirm: "Are you sure?"}, class: "delete_button" %></div>

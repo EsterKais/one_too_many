@@ -1,0 +1,33 @@
+
+.descr {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.thing {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+  color: #333333;
+  margin-top: 5px;
+  margin-left: 60px;
+}
+
+.buttons {
+  font-family: 'Noto Sans', sans-serif;
+  color: #333333;
+  text-align: center;
+  justify-content: center;
+}
+
+.edit_button {
+  font-family: 'Noto Sans', sans-serif;
+  color: #333333;
+}
+
+.delete_button {
+  font-family: 'Noto Sans', sans-serif;
+  color: #333333;
+}
