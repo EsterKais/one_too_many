@@ -3,3 +3,5 @@
 <% @beans.each do |bean| %>
 <div><%= link_to bean.name, bean_path(bean.id) %></div>
 <% end %>
+
+  <%= link_to "NEW", new_bean_path %>

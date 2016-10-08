@@ -7,6 +7,6 @@
 
   <p><%= image_tag @bean.image_url%></p>
 
-  <%= link_to "NEW", new_bean_path(@bean.id) %>
+
   <%= link_to "EDIT", edit_bean_path(@bean.id) %>
   <%= link_to "DELETE", bean_path(@bean.id), method: :delete, data: {confirm: "Are you sure?"} %>
