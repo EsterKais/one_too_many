@@ -1,1 +1,10 @@
-<h1> Will be used for FLAVOUR and ROAST pages.. </h1>
+<h1><%= @bean.name %></h1>
+
+  <p><%= @bean.roast.capitalize %></p>
+  <p><%= @bean.flavour.capitalize %></p>
+  <p><%= @bean.country.name %></p>
+  <p>€<%= @bean.price %></p>
+
+  <p><%= image_tag @bean.image_url%></p>
+  <%= link_to "EDIT", edit_bean_path(@bean.id) %>
+  <%= link_to "DELETE", bean_path(@bean.id), method: :delete, data: {confirm: "Are you sure?"} %>

@@ -1,1 +1,5 @@
-<h1>Beans</h1>
+<h1>ALL BEANS</h1>
+
+<% @beans.each do |bean| %>
+<div><%= link_to bean.name, bean_path(bean.id) %></div>
+<% end %>
