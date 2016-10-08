@@ -1,26 +1,31 @@
-<%= form_for @bean do |f| %>
-  <pre><%= @bean.errors.to_json %></pre>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
 
-  <%= f.label :roast %>
-  <%= f.text_field :roast %>
 
-  <%= f.label :flavour %>
-  <%= f.text_field :flavour %>
 
-  <%= f.label :price %>
-  <%= f.number_field :price %>
+  <%= form_for @bean do |f| %>
+    <div><%= f.label :name, class: "name_label"%>
+    <%= f.text_field :name, class: "text_field"%></div>
 
-  <%= f.label :description %>
-  <%= f.text_field :description %>
+    <div><%= f.label :roast, class: "name_label"%>
+    <%= f.text_field :roast, class: "text_field" %></div>
 
-  <%= f.label :image_url %>
-  <%= f.text_field :image_url %>
+    <div><%= f.label :flavour, class: "name_label"%>
+    <%= f.text_field :flavour, class: "text_field"%></div>
 
-  <%= f.label :country_id %>
-  <%= f.collection_select(:country_id, Country.all, :id, :name) %>
+    <div><%= f.label :price, class: "name_label"%>
+    <%= f.number_field :price, class: "text_field" %></div>
 
-  <%= f.submit (@bean.new_record? ? "Create" : "Update") %>
+    <div><%= f.label :description, class: "name_label"%>
+    <%= f.text_field :description, class: "text_field" %></div>
 
-<% end %>
+    <div><%= f.label :image_url, class: "name_label"%>
+    <%= f.text_field :image_url, class: "text_field"%></div>
+
+    <div><%= f.label :country_id, class: "name_label"%>
+    <%= f.collection_select(:country_id, Country.all, :id, :name) %></div>
+
+    <div class="create_button"><%= f.submit (@bean.new_record? ? "Create" : "Update") %></div>
+
+  <% end %>
