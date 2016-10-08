@@ -1,7 +1,10 @@
-<h1>ALL BEANS</h1>
 
-<% @beans.each do |bean| %>
-<div><%= link_to bean.name, bean_path(bean.id) %></div>
-<% end %>
+<h2 class="page-title">ALL BEANS</h2>
 
-  <%= link_to "NEW", new_bean_path %>
+<div class="product_card">
+  <% @beans.each do |bean| %>
+    <p> <%= link_to bean.name, bean_path(bean.id) %> </p>
+  <% end %>
+</div>
+
+<%= link_to "NEW", new_bean_path %>
