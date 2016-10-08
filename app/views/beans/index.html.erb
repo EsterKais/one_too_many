@@ -1,10 +1,29 @@
+<head>
+  <link rel="stylesheet" href="beans.scss">
+</head>
 
+<body class="index_body">
+
+
+
+<div class="banner">
+  <img class="banner-logo" src="https://www.feedprojects.com/sites/default/files/blogs/Banner_D_5.jpg">
 <h2 class="page-title">ALL BEANS</h2>
+<main class="product-main">
 
-<div class="product_card">
   <% @beans.each do |bean| %>
-    <p> <%= link_to bean.name, bean_path(bean.id) %> </p>
+    <article class="product-card">
+      <%= image_tag bean.image_url, class: "product-card-image" %>
+      <%= link_to bean.name, bean_path(bean.id), class: "product-card-name" %>
+    </article>
   <% end %>
-</div>
+</main>
 
-<%= link_to "NEW", new_bean_path %>
+
+    <div class="new-button">
+      <%= link_to "NEW", new_bean_path, class:"new-button" %>
+    </div>
+
+
+
+</body>
