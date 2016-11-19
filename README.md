@@ -14,10 +14,10 @@ During this hackathon we had the chance to use everything we had learned from th
 
 * Styling: HTML5, CSS3
 * Deepen our understandong of the Client-server Model and Rails, which included:
-..* Model creation (one-to-many association, validations)
-..* Migrations
-..* Database
-..* Rails Console
-..* Views and Controllers(index, show, new, edit, update, delete)
+ * Model creation (one-to-many association, validations)
+ * Migrations
+ * Database
+ * Rails Console
+ * Views and Controllers(index, show, new, edit, update, delete)
 
 
